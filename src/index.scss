@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-date-range/dist/styles.css'; // main style file
+@import 'react-date-range/dist/theme/default.css'; // theme css file
+
+@import './styles/constants';
+@import './styles/utility';
+
+
+.banner-color{
+    background-color: #191919;
+}
+
+p, h1,h2,h3, span, a {
+    font-family: apercu-pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+
+.animate-form{
+    transform: translateY(68px);
+}
+
+
+input[type='checkbox'], input[type='radio']  {
+    accent-color: black;
+}
+
+input[type='radio']  {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    appearance: none;
+    border-radius: 50%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    outline: 0px;
+    transition: all 0.2s ease-in-out 0s;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(194, 194, 193);
+}
+
+input:checked{
+    background-color: rgb(255, 255, 255);
+    border: 6px solid rgb(25, 25, 25);
+}
